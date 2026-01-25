@@ -1,0 +1,15 @@
+.main{
+    border:2px solid #dddddd7b;
+    width:200px;
+    box-shadow: 1px 1px 3px 1px #ddddddb8;
+    
+}
+.img{
+    width:180px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.text{
+    text-align: center;
+    padding: 2px;
+}

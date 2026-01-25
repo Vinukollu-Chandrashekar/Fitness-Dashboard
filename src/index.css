@@ -1,0 +1,120 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: system-ui, Arial, sans-serif;
+}
+.app-content {
+  min-height: calc(100vh - 64px);
+  background-image: url("/src/Fitness-dashboard/GYM-BG.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 2rem;
+  
+}.home-title {
+  transition: text-shadow transform 0.3s ease;
+  animation: slideIn 1.5s ease-in forwards;
+  background: rgba(0,0,0,0.2);
+  padding: 1.5rem;
+  border-radius: 15px;
+  max-width: 600px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+p{
+  font-size: large;
+  font-family: 'serif';
+}
+.home-title:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}@keyframes Card {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}.card {
+  animation: Card 1.5s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.form-control{
+  transition: text-shadow transform 0.3s ease;
+  animation: Card 2s ease-in backwards;
+  background: rgba(0,0,0,0.2);
+  padding: 1.5rem;
+  border-radius: 15px;
+  max-width: 600px;
+  margin:auto;
+}
+.workout-title {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.modal-backdrop-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8 ); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.modal-box-custom {
+  background:linear-gradient(to top,rgb(69, 148, 180),white);
+  color:black;
+  width: 50%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 5px solid black;
+  animation: popIn 1s ease-in;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+img{
+  background-color:white; 
+}
+img:hover{
+  background-color: cornflowerblue;
+}
