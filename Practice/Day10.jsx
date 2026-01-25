@@ -7,7 +7,7 @@
 // .How to use useEffect to handle lifecycle
 import Count from "./Counter";
 import { useState,useEffect } from "react";
-import  Styling  from "./styling";
+import  Styling  from "../src/styling";
 export default function Mounting(){
     const[count,setCount]=useState(0);
     const[data,setData]=useState(0);

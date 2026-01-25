@@ -1,45 +1,45 @@
 
 import { useRef, useState } from 'react'
-import reactLogo from './assets/react.svg'
+import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Header,{SubHeader} from './Header'
-import Sample from './Sample'
-import Jsx from './JSX/Jsx_sample'
-import Button from './Day2'
-import { Button2 } from './Day2'
-import States,{StateExample,Toggle,Multiple} from './Day3'
-import Props,{Obj,Arrays, Btn, DefaultProps, JsxProps} from './Day4'
-import Input, { Checkboxes, ControlledComponents } from './Day5'
-import Radio,{Table}from './Day6'
-import ReuseComponent , {UseEffect,Clock,DropDown} from './Day7'
-import Adduser from './Adduser'
-import NestedLooping from './Day8'
-import PropsUseeffect from './Day9'
-import Mounting from './Day10'
-import DynamicStyling from './Day11'
-import External from './Day12'
-import ModuleCss, { StyledComponents } from './Day13'
-import Bootstraping,{UseRef,Own} from './Day14';
-import Uncontrolled from './Day15';
-import Test from './Day15_part2';
-import PassFun, { ForwardRef } from './Day16';
-import UseForm from './Day17';
-import Manual, { Auto } from './Day17_test';
-import Transition,{TransitionHook} from './Day18';
-import Derived from './Day19';
-import OwnCode from './OwnReact';
-import LiftingStateUp, { UpdateArray, UpdatingObjects, UseActionStateHook } from './Day20';
-import UseId,{CustomHook} from './Day21';
-import ContextAPI, { ReactRouter,Routing,HeaderRouting } from './Day22';
-import FitnessDashboard from './Fitness-dashboard/Fitness_nav';
+import Header,{SubHeader} from './Practice/Header'
+import Sample from '../src/Sample'
+import Jsx from './src/JSX/Jsx_sample'
+import Button from './Practice/Day2'
+import { Button2 } from './Practice/Day2'
+import States,{StateExample,Toggle,Multiple} from './Practice/Day3'
+import Props,{Obj,Arrays, Btn, DefaultProps, JsxProps} from './Practice/Day4'
+import Input, { Checkboxes, ControlledComponents } from './Practice/Day5'
+import Radio,{Table}from './Practice/Day6'
+import ReuseComponent , {UseEffect,Clock,DropDown} from './Practice/Day7'
+import Adduser from './Practice/Adduser'
+import NestedLooping from './Practice/Day8'
+import PropsUseeffect from './Practice/Day9'
+import Mounting from './Practice/Day10'
+import DynamicStyling from './Practice/Day11'
+import External from './Practice/Day12'
+import ModuleCss, { StyledComponents } from './Practice/Day13'
+import Bootstraping,{UseRef,Own} from './Practice/Day14';
+import Uncontrolled from './Practice/Day15';
+import Test from './Practice/Day15_part2';
+import PassFun, { ForwardRef } from './Practice/Day16';
+import UseForm from './Practice/Day17';
+import Manual, { Auto } from './Practice/Day17_test';
+import Transition,{TransitionHook} from './Practice/Day18';
+import Derived from './Practice/Day19';
+import OwnCode from '../src/OwnReact';
+import LiftingStateUp, { UpdateArray, UpdatingObjects, UseActionStateHook } from './Practice/Day20';
+import UseId,{CustomHook} from './Practice/Day21';
+import ContextAPI, { ReactRouter,Routing,HeaderRouting } from './Practice/Day22';
+import FitnessDashboard from './src/Fitness-dashboard/Fitness_nav';
 import "./Bootstrap.css";
-import PageNotFound from './Day23';
-import NestedRouting from './Day23';
-import LayoutRoutes from './Day24'
-import PrefixRouting from './Day25'
-import OptionalSegment from './Day26'
-import FdMain from './Fitness-dashboard/FD_Main'
+import PageNotFound from './Practice/Day23';
+import NestedRouting from './Practice/Day23';
+import LayoutRoutes from './Practice/Day24'
+import PrefixRouting from './Practice/Day25'
+import OptionalSegment from './Practice/Day26'
+import FdMain from './src/Fitness-dashboard/FD_Main'
 function App() {
   const [Name,setName]=useState("PAVAN");
   let name="chandu";
@@ -217,8 +217,6 @@ function App() {
     </>
   )
 }
-
-export default App
 
 
 

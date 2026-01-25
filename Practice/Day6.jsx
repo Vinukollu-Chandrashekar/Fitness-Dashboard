@@ -8,7 +8,7 @@
 // Default selection in dropdown
 
 import { useState } from "react";
-import Jsx from "./JSX/Jsx_sample";
+import Jsx from "../src/JSX/Jsx_sample";
 export default function Radio(){
     const[btn,setBtn]=useState('Male');
     const[city,setCity]=useState()

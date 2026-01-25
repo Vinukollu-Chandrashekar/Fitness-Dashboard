@@ -3,10 +3,12 @@ import './index.css';
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import AppFitness from './Fitness-dashboard/AppFitness.jsx';
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <AppFitness />
   </StrictMode>
 )

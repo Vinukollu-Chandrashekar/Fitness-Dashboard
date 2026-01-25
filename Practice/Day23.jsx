@@ -6,7 +6,7 @@
 // .Redirect from 404
 import Home from "./Day22_Home"
 import Login from "./Day22_Login"
-import About from "./Day22_about"
+// import About from "./Day22_about"
 import NavBar from "./Day22_NavBar"
 import PageNotFoundComponent from "./Day23_sub1"
 import { BrowserRouter,Routes,Route, Navigate } from "react-router"
@@ -50,7 +50,7 @@ export default function NestedRouting(){
             <NavBar />
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/about" element={<About/>}/>
+                    {/* <Route path="/about" element={<About/>}/> */}
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/college" element={<College/>}>
                         <Route path="student" element={<Student/>}/>

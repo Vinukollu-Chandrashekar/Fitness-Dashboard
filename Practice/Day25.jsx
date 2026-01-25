@@ -1,8 +1,9 @@
-// React Router Optional Segment:
+// Prefix Routing and Dynamic Routing:
 
-// .What is Optional Segment
-// .Static Optional Segment
-// .Dynamic Optional Segment
+// .What is Dynamic Routes
+// .Make user List page
+// .Make user Detail Page
+// .Make Dynamic Routing
 
 import { Navigate } from "react-router";
 import Department from "./Day23_Department";
@@ -13,11 +14,11 @@ import Login from "./Day22_Login";
 import { BrowserRouter,Routes,Route } from "react-router";
 import NavBar from "./Day22_NavBar";
 import College from "./Day23_College";
-import Users from "./Users";
+import Users from "../src/Users";
 import PageNotFound from "./Day23_sub1";
-import UserDetails from "./UserDetails";
+import UserDetails from "../src/UserDetails";
 
-export default function OptionalSegment(){
+export default function PrefixRouting(){
     return(
         <>
             <BrowserRouter>
@@ -28,8 +29,8 @@ export default function OptionalSegment(){
                                 <Route path='/in/user/home' element={<Home/>}/>
                                 <Route path='/in/user/about' element={<About/>}/>
                                 <Route path='/in/user/login' element={<Login/>}/>
+                                <Route path="/in/user/users" element={<Users/>}/>
                                 <Route path="/in/user/users/:id" element={<UserDetails/>}/>
-                                <Route path="/in/user/users/list?" element={<Users/>}/>
                             </Route>
                         </Route>
                     </Route>

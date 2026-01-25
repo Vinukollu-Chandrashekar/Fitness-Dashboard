@@ -1,4 +1,4 @@
-import Student from "./Student";
+import Student from "../src/Student";
 
 
 export default function College({college}){
