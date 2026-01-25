@@ -1,23 +1,29 @@
-// import FdMain from "./FD_Main";
-// import FitnessNav from "./Fitness_nav";
-// import Footer from "./Footer";
-
-// function AppFitness() {
-//   return (
-//     <>
-//       <FitnessNav />
-//       <FdMain />
-//       <Footer />
-//     </>
-//   );
-// }
-
-// export default AppFitness;
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import FitnessDashboardNav from "./Fitness_nav";
+import FHome from "./FHome";
+import FWorkout from "./FWorkout";
+import FBmi from "./FBmi";
+import FAbout from "./FAbout";
+import Footer from "./Footer";
 
 export default function AppFitness() {
   return (
-    <div style={{ color: "white", padding: "40px" }}>
-      <h1>Fitness Dashboard Loaded ✅</h1>
-    </div>
+    <BrowserRouter>
+      <FitnessDashboardNav />
+
+      {/* BACKGROUND CONTAINER */}
+      <main className="app-content">
+        <Routes>
+          <Route path="/" element={<FHome />} />
+          <Route path="/home" element={<FHome />} />
+          <Route path="/workout" element={<FWorkout />} />
+          <Route path="/bmi" element={<FBmi />} />
+          <Route path="/about" element={<FAbout />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </main>
+
+      <Footer />
+    </BrowserRouter>
   );
 }
