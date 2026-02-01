@@ -4,7 +4,7 @@ import FHome from "./FHome";
 import FWorkout from "./FWorkout";
 import FBmi from "./FBmi";
 import FAbout from "./FAbout";
-
+import './Fitness.css'
 export default function FdMain() {
   return (
     <Routes>

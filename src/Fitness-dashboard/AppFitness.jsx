@@ -5,6 +5,7 @@ import FWorkout from "./FWorkout";
 import FBmi from "./FBmi";
 import FAbout from "./FAbout";
 import Footer from "./Footer";
+import './Fitness.css'
 
 export default function AppFitness() {
   return (
