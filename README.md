@@ -1,5 +1,8 @@
 # Fitness Dashboard 🏋️‍♂️
 
+[![Live Demo](https://fancy-cobbler-ccab4e.netlify.app/)
+
+
 A **React + Vite** based Fitness Dashboard application designed to provide a clean and interactive UI for fitness-related features such as workouts, BMI calculation, and informational pages.
 
 This project focuses on **frontend architecture, component structuring, routing, and UI styling**, following real-world React best practices.
